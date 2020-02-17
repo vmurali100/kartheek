@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   literal Way of Creating Objects
+      var person = {
+        fname: "Murali",
+        lname: "Krishna"
+      };
+
+      //Adding a Property with . notation
+      person.email = "vmurali@gmail.com";
+
+      // adding a property with [] notation
+      person["city"] = "Bangalore";
+
+      console.log(person);
+
+      delete person.lname;
+
+      //For In loop
+      for (a in person) {
+        // console.log(a);
+        console.log(person[a]);
+      }
+
+      console.log(person.city);
+      //   OOP way Creating Objects
+    </script>
+  </body>
+</html>

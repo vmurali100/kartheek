@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var users = [
+        {
+          fname: "Alvin",
+          lname: "Carstens"
+        },
+        {
+          fname: "Keesha",
+          lname: "Ulvestad"
+        },
+        {
+          fname: "Louis",
+          lname: "Calo"
+        },
+        {
+          fname: "Munazza",
+          lname: "Mendoza"
+        },
+        {
+          fname: "Denys",
+          lname: "Dunlap"
+        },
+        {
+          fname: "Louis",
+          lname: "Calo M"
+        }
+      ];
+      var searchResults = users.filter(function(obj, index) {
+        if (obj.fname == "Louis") {
+          return index;
+        }
+      });
+
+      console.log(searchResults);
+      if (searchResults.length > 1) {
+      }
+    </script>
+  </body>
+</html>
