@@ -13,13 +13,22 @@ export default class Child extends Component {
   }
   componentDidMount() {
     console.log("componentDidMount called");
-    this.props.dataFunc(this.state);
+    // this.props.dataFunc(this.state);
   }
   render() {
-    console.log("render Called");
     return (
       <div>
+        <button
+          onClick={() => {
+            this.props.dataFunc(this.state);
+          }}
+        >
+          Send Data
+        </button>
         <p>I am From Child</p>
+        {setTimeout(() => {
+          this.props.dataFunc(this.state);
+        })}
       </div>
     );
   }
