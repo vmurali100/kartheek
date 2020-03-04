@@ -2,6 +2,7 @@ import React from "react";
 // import Kartheek from "./Kartheek";
 import Parent from "./ChildToParent/Parent";
 import Main from "./SiblingComponents/Main";
+import Crud from "./CRUD/Crud";
 
 //functional or stateless Component
 function App() {
@@ -34,10 +35,10 @@ function App() {
   ];
   return (
     <div className="App">
-      <h2>Hello world</h2>
       {/* <Kartheek msg={message} obj={person} users={users} /> */}
       {/* <Parent /> */}
-      <Main />
+      {/* <Main /> */}
+      <Crud />
     </div>
   );
 }
